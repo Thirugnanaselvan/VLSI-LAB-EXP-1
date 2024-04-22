@@ -1,9 +1,10 @@
 # VLSI-LAB-EXPERIMENTS
-AIM: To simulate and synthesis Logic Gates,Adders and Subtractor using Xilinx ISE.
+**AIM**:
+To simulate and synthesis Logic Gates,Adders and Subtractor using Vivado 2023.12.
 
-APPARATUS REQUIRED: Vivado 2023.12
+**APPARATUS REQUIRED**: Vivado 2023.12
 
-PROCEDURE: 
+**PROCEDURE**: 
 
 1. Open Vivado: Launch Xilinx Vivado software on your computer.
 
@@ -24,44 +25,44 @@ PROCEDURE:
 9. View Results: After the simulation completes, you can view waveforms, debug signals, and analyze the behavior of your design.
 
 
-Logic Diagram :
+**Logic Diagram** :
 
-Logic Gates:
+LOGIC GATES:
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/ee17970c-3ac9-4603-881b-88e2825f41a4)
 
 
-Half Adder:
+HALF ADDER:
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/0e1ecb96-0c25-4556-832b-aeeedfdfe7b9)
 
 
-Full adder:
+FULL ADDER:
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/9bb3964c-438f-469d-a3de-c1cca6f323fb)
 
 
-Half Subtractor:
+HALF SUBTRACTOR:
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/731470b7-eb4e-49f8-8bb7-2994052a7184)
 
 
 
-Full Subtractor:
+FULL SUBTRACTOR:
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/d66f874b-c1f2-44b3-a035-7149b56430c1)
 
 
 
-8 Bit Ripple Carry Adder
+8 BIT RIPPLE CARRY ADDER:
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/7385a408-40a5-4203-8050-b72818622d79)
 
 
 
-VERILOG CODE:
+**VERILOG CODE**:
 
-Logic Gates:
+LOGIC GATES:
 ```
 module logicgate (a,b,andgate,orgate,xorgate,nandgate,norgate,xnorgate,notgate);
 input a,b;  
@@ -76,7 +77,7 @@ not(notgate,a);
 endmodule
 ```
 
-Half Adder:
+HALF ADDER:
 ```
 module halfadder(a,b,sum,carry);
 input a,b;
@@ -86,7 +87,7 @@ and g2(carry,a,b);
 endmodule
 ```
 
-Half Subractor:
+HALF SUBTRACTOR:
 ```
 module halfsubtractor(a,b,diff,borrow);
 input a,b;
@@ -96,7 +97,7 @@ and g2(borrow,~a,b);
 endmodule
 ```
 
-Full Adder:
+FULL ADDER:
 ```
 module fadd(a,b,c,sum,carry);
 input a,b,c;
@@ -110,7 +111,7 @@ or g5(carry,w3,w2);
 endmodule
 ```
 
-Full Subtractor:
+FULL SUBTRACTOR:
 ```
 module fs(a,b,bin,d,bout);
 input a,b,bin; 
@@ -124,7 +125,7 @@ or g5(bout,w2,w3);
 endmodule
 ```
 
-4 bit ripple carry adder:
+4 BIT RIPPLE CARRY ADDER:
 ```
 module rippe_adder(S,Cout,X,Y,Cin);
 input [3:0] X,Y;
@@ -149,7 +150,7 @@ or G5(CO,w3,w3);
 endmodule
 ```
 
-8 bit ripple carry adder:
+8 BIT RIPPLE CARRY ADDER:
 ```
 module rippe_adder(S,Cout,X,Y,Cin);
 input [7:0] X,Y;
@@ -178,28 +179,29 @@ or G5(CO,w3,w3);
 endmodule
 ```
 
-OUTPUT:
-Logic gates:
+**OUTPUT**:
+
+LOGIC GATES:
 ![logic gates](https://github.com/navaneethans/VLSI-LAB-EXP-1/assets/160720772/4cc2d0d2-0ad8-484e-a756-2dbe4f75244c)
 
-Half adder:
+HALF ADDER:
 ![half adder](https://github.com/navaneethans/VLSI-LAB-EXP-1/assets/160720772/680691f6-b4de-413c-9b63-ec50eae890d5)
 
-half subtractor:
+HALF SUBTRACTOR:
 ![halfsubtractor](https://github.com/navaneethans/VLSI-LAB-EXP-1/assets/160720772/ef926a42-d36c-47fc-aa84-eb0d0fc054fe)
 
-Full adder:
+FULL ADDER:
 ![full adder](https://github.com/navaneethans/VLSI-LAB-EXP-1/assets/160720772/bd4fd68c-1e87-47a6-9d80-ab43d1c47a79)
 
-Full subtractor:
+FULL SUBTRACTOR:
 ![Full subractor](https://github.com/navaneethans/VLSI-LAB-EXP-1/assets/160720772/3bdc615d-940f-4011-aecd-d867de75b3dc)
 
-4 bit ripple carry adder:
+4 BIT RIPPLE CARRY ADDER:
 ![4-bit Ripple_Carry_adder](https://github.com/navaneethans/VLSI-LAB-EXP-1/assets/160720772/bca06bfa-267b-4d0f-87af-0212c30ff276)
 
-8 bit ripple carry adder:
+8 BIT RIPPLE CARRY ADDER:
 ![8 bit ripple carry adder](https://github.com/navaneethans/VLSI-LAB-EXP-1/assets/160720772/7861b793-8b6d-4ce5-a631-d165ceaa3dfc)
 
-RESULT:
+**RESULT**:
 
-Hence Logic Gates, Adders and Subtractor are simulated and synthesised using Xilinx ISE.
+Hence Logic Gates, Adders and Subtractor are simulated and synthesised using Vivado 2023.12.
