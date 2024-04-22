@@ -27,6 +27,7 @@ PROCEDURE:
 Logic Diagram :
 
 Logic Gates:
+
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/ee17970c-3ac9-4603-881b-88e2825f41a4)
 
 
