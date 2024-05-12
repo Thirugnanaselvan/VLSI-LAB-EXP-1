@@ -202,6 +202,10 @@ FULL SUBTRACTOR:
 8 BIT RIPPLE CARRY ADDER:
 ![8 bit ripple carry adder](https://github.com/navaneethans/VLSI-LAB-EXP-1/assets/160720772/7861b793-8b6d-4ce5-a631-d165ceaa3dfc)
 
+
+
+
+
 **RESULT**:
 
 Hence Logic Gates, Adders and Subtractor are simulated and synthesised using Vivado 2023.12.
